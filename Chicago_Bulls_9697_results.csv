@@ -1,0 +1,103 @@
+G,Date,Opponent,,Tm,Opp,W,L,Streak
+,,,,,,,,
+1,Fri Nov 1 1996,Boston Celtics,W,107,98,1,0,W 1
+2,Sat Nov 2 1996,Philadelphia 76ers,W,115,86,2,0,W 2
+3,Tue Nov 5 1996,Vancouver Grizzlies,W,96,73,3,0,W 3
+4,Wed Nov 6 1996,Miami Heat,W,106,100,4,0,W 4
+5,Fri Nov 8 1996,Detroit Pistons,W,98,80,5,0,W 5
+6,Sat Nov 9 1996,Boston Celtics,W,104,92,6,0,W 6
+7,Mon Nov 11 1996,Phoenix Suns,W,97,79,7,0,W 7
+8,Wed Nov 13 1996,Miami Heat,W,103,71,8,0,W 8
+9,Fri Nov 15 1996,Charlotte Hornets,W,110,87,9,0,W 9
+10,Sat Nov 16 1996,Atlanta Hawks,W,97,69,10,0,W 10
+11,Wed Nov 20 1996,Phoenix Suns,W,113,99,11,0,W 11
+12,Thu Nov 21 1996,Denver Nuggets,W,110,92,12,0,W 12
+13,Sat Nov 23 1996,Utah Jazz,L,100,105,12,1,L 1
+14,Mon Nov 25 1996,Los Angeles Clippers,W,88,84,13,1,W 1
+15,Fri Nov 29 1996,Dallas Mavericks,W,116,97,14,1,W 2
+16,Sat Nov 30 1996,San Antonio Spurs,W,97,88,15,1,W 3
+17,Tue Dec 3 1996,Milwaukee Bucks,W,107,104,16,1,W 4
+18,Thu Dec 5 1996,Los Angeles Clippers,W,114,96,17,1,W 5
+19,Sat Dec 7 1996,Miami Heat,L,80,83,17,2,L 1
+20,Sun Dec 8 1996,Toronto Raptors,L,89,97,17,3,L 2
+21,Wed Dec 11 1996,Minnesota Timberwolves,W,103,86,18,3,W 1
+22,Fri Dec 13 1996,New Jersey Nets,W,113,92,19,3,W 2
+23,Sat Dec 14 1996,Charlotte Hornets,W,87,82,20,3,W 3
+24,Tue Dec 17 1996,Los Angeles Lakers,W,129,123,21,3,W 4
+25,Thu Dec 19 1996,Charlotte Hornets,W,93,72,22,3,W 5
+26,Sat Dec 21 1996,Philadelphia 76ers,W,111,105,23,3,W 6
+27,Mon Dec 23 1996,New Jersey Nets,W,113,81,24,3,W 7
+28,Wed Dec 25 1996,Detroit Pistons,W,95,83,25,3,W 8
+29,Thu Dec 26 1996,Atlanta Hawks,L,103,108,25,4,L 1
+30,Sat Dec 28 1996,Cleveland Cavaliers,W,102,97,26,4,W 1
+31,Mon Dec 30 1996,Indiana Pacers,W,81,79,27,4,W 2
+32,Fri Jan 3 1997,Orlando Magic,W,110,89,28,4,W 3
+33,Mon Jan 6 1997,Utah Jazz,W,102,89,29,4,W 4
+34,Fri Jan 10 1997,Milwaukee Bucks,W,116,101,30,4,W 5
+35,Sat Jan 11 1997,Houston Rockets,W,110,86,31,4,W 6
+36,Tue Jan 14 1997,Washington Bullets,W,108,107,32,4,W 7
+37,Wed Jan 15 1997,Minnesota Timberwolves,W,112,102,33,4,W 8
+38,Fri Jan 17 1997,Milwaukee Bucks,W,100,73,34,4,W 9
+39,Sun Jan 19 1997,Houston Rockets,L,86,102,34,5,L 1
+40,Tue Jan 21 1997,New York Knicks,W,88,87,35,5,W 1
+41,Thu Jan 23 1997,Cleveland Cavaliers,W,87,71,36,5,W 2
+42,Sat Jan 25 1997,Toronto Raptors,W,110,98,37,5,W 3
+43,Tue Jan 28 1997,Vancouver Grizzlies,W,111,96,38,5,W 4
+44,Thu Jan 30 1997,Sacramento Kings,W,111,93,39,5,W 5
+45,Fri Jan 31 1997,Golden State Warriors,W,115,92,40,5,W 6
+46,Sun Feb 2 1997,Seattle SuperSonics,W,91,84,41,5,W 7
+47,Tue Feb 4 1997,Portland Trail Blazers,W,88,84,42,5,W 8
+48,Wed Feb 5 1997,Los Angeles Lakers,L,90,106,42,6,L 1
+49,Tue Feb 11 1997,Charlotte Hornets,W,103,100,43,6,W 1
+50,Fri Feb 14 1997,Atlanta Hawks,W,89,88,44,6,W 2
+51,Sun Feb 16 1997,Orlando Magic,W,110,89,45,6,W 3
+52,Tue Feb 18 1997,Denver Nuggets,W,134,123,46,6,W 4
+53,Fri Feb 21 1997,Washington Bullets,W,103,99,47,6,W 5
+54,Sat Feb 22 1997,Golden State Warriors,W,120,87,48,6,W 6
+55,Mon Feb 24 1997,Portland Trail Blazers,W,116,89,49,6,W 7
+56,Thu Feb 27 1997,Cleveland Cavaliers,L,70,73,49,7,L 1
+57,Fri Feb 28 1997,Sacramento Kings,W,126,108,50,7,W 1
+58,Mon Mar 3 1997,Milwaukee Bucks,W,108,90,51,7,W 2
+59,Wed Mar 5 1997,San Antonio Spurs,W,111,69,52,7,W 3
+60,Fri Mar 7 1997,Indiana Pacers,W,104,96,53,7,W 4
+61,Sun Mar 9 1997,New York Knicks,L,93,97,53,8,L 1
+62,Tue Mar 11 1997,Boston Celtics,W,117,106,54,8,W 1
+63,Wed Mar 12 1997,Philadelphia 76ers,W,108,104,55,8,W 2
+64,Fri Mar 14 1997,New Jersey Nets,L,98,99,55,9,L 1
+65,Sat Mar 15 1997,Atlanta Hawks,W,99,79,56,9,W 1
+66,Tue Mar 18 1997,Seattle SuperSonics,W,89,87,57,9,W 2
+67,Fri Mar 21 1997,Indiana Pacers,W,117,98,58,9,W 3
+68,Sat Mar 22 1997,Detroit Pistons,W,103,88,59,9,W 4
+69,Tue Mar 25 1997,Dallas Mavericks,W,94,92,60,9,W 5
+70,Thu Mar 27 1997,Toronto Raptors,W,96,83,61,9,W 6
+71,Sat Mar 29 1997,New Jersey Nets,W,111,101,62,9,W 7
+72,Tue Apr 1 1997,Boston Celtics,W,111,106,63,9,W 8
+73,Thu Apr 3 1997,Washington Bullets,L,102,110,63,10,L 1
+74,Fri Apr 4 1997,Cleveland Cavaliers,W,84,71,64,10,W 1
+75,Sun Apr 6 1997,Orlando Magic,W,110,94,65,10,W 2
+76,Mon Apr 7 1997,Philadelphia 76ers,W,128,102,66,10,W 3
+77,Wed Apr 9 1997,Indiana Pacers,W,86,80,67,10,W 4
+78,Thu Apr 10 1997,New York Knicks,W,105,103,68,10,W 5
+79,Sun Apr 13 1997,Detroit Pistons,L,91,108,68,11,L 1
+80,Mon Apr 14 1997,Toronto Raptors,W,117,100,69,11,W 1
+81,Wed Apr 16 1997,Miami Heat,L,92,102,69,12,L 1
+82,Sat Apr 19 1997,New York Knicks,L,101,103,69,13,L 2
+1,Fri Apr 25 1997,Washington Bullets,W,98,86,1,0,W 1
+2,Sun Apr 27 1997,Washington Bullets,W,109,104,2,0,W 2
+3,Wed Apr 30 1997,Washington Bullets,W,96,95,3,0,W 3
+4,Tue May 6 1997,Atlanta Hawks,W,100,97,4,0,W 4
+5,Thu May 8 1997,Atlanta Hawks,L,95,103,4,1,L 1
+6,Sat May 10 1997,Atlanta Hawks,W,100,80,5,1,W 1
+7,Sun May 11 1997,Atlanta Hawks,W,89,80,6,1,W 2
+8,Tue May 13 1997,Atlanta Hawks,W,107,92,7,1,W 3
+9,Tue May 20 1997,Miami Heat,W,84,77,8,1,W 4
+10,Thu May 22 1997,Miami Heat,W,75,68,9,1,W 5
+11,Sat May 24 1997,Miami Heat,W,98,74,10,1,W 6
+12,Mon May 26 1997,Miami Heat,L,80,87,10,2,L 1
+13,Wed May 28 1997,Miami Heat,W,100,87,11,2,W 1
+14,Sun Jun 1 1997,Utah Jazz,W,84,82,12,2,W 2
+15,Wed Jun 4 1997,Utah Jazz,W,97,85,13,2,W 3
+16,Fri Jun 6 1997,Utah Jazz,L,93,104,13,3,L 1
+17,Sun Jun 8 1997,Utah Jazz,L,73,78,13,4,L 2
+18,Wed Jun 11 1997,Utah Jazz,W,90,88,14,4,W 1
+19,Fri Jun 13 1997,Utah Jazz,W,90,86,15,4,W 2
