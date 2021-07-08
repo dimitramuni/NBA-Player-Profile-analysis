@@ -207,3 +207,5 @@ print(tb)
 cat('accuracy',sum(diag(tb))/sum(tb))
 
 
+
+

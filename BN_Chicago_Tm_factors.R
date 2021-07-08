@@ -102,7 +102,7 @@ bn_to_discretise_attempts=as.data.frame(apply(bn_to_discretise_attempts,MARGIN=2
 
 
 bn_discrete_attempts=discretize(bn_to_discretise_attempts[,-1], breaks = 5)
-#bn_discrete_attempts$Tm=as.factor(chicago_9798$Tm.x)
+bn_discrete_attempts$Tm=as.factor(chicago_9798$Tm.x)
 str(bn_discrete_attempts)
 
 
@@ -118,9 +118,6 @@ vstructs(simple_expert_dag2)
 p<-arc.strength(simple_expert_dag2,data=bn_discrete_attempts,criterion = "x2")
 strength.plot(simple_expert_dag2,
               strength = p )
-
-
-
 
 
 # Computing accuracy of simple expert BN
