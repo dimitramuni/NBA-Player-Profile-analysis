@@ -42,8 +42,8 @@ strength.plot(naive_dag,
               strength = p )
 
 #computing accuracy of simple expert BN
-
-fitted_expertBN<-bn.fit(simple_expert_dag,data=bn_discrete)
+typeof(bn_discrete)
+fitted_expertBN<-bn.fit(simple_expert_dag,data=as.data.frame(bn_discrete))
 fitted_grain<-as.grain(fitted_expertBN)
 
 team_points<-sort(unique(bn_discrete$Tm))
@@ -88,10 +88,12 @@ Alternate Approach considering attempts(FGA,3PA,FTA),assists,block,steal,rebound
 bn_to_discretise_attempts=chicago_9798[,c('Tm.x','FGA','FTA','X3PA','AST','TRB')]
 
 bn_to_discretise_attempts=as.data.frame(apply(bn_to_discretise_attempts,MARGIN=2,FUN=as.numeric))
+bn_to_discretise_attempts$Tm<-bn_to_discretise_attempts$Tm.x
+bn_to_discretise_attempts<-bn_to_discretise_attempts[,-1]
 
-bn_discrete_attempts=discretize(bn_to_discretise_attempts[,-1], breaks = 5)
-#bn_discrete_attempts$Tm=as.factor(chicago_9798$Tm.x)
-str(bn_discrete_attempts)
+str(bn_to_discretise_attempts)
+bn_discrete_attempts=discretize(bn_to_discretise_attempts, breaks = 5)
+
 
 
 
@@ -113,7 +115,7 @@ strength.plot(simple_expert_dag2,
 
 # Computing accuracy of simple expert BN
 
-fitted_expertBN2<-bn.fit(simple_expert_dag2,data=bn_discrete_attempts)
+fitted_expertBN2<-bn.fit(simple_expert_dag2,data=as.data.frame(bn_discrete_attempts))
 fitted_grain2<-as.grain(fitted_expertBN2)
 
 team_points<-sort(unique(bn_discrete_attempts$Tm))

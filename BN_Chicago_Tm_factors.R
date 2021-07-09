@@ -124,6 +124,8 @@ strength.plot(simple_expert_dag2,
 
 fitted_expertBN2<-bn.fit(simple_expert_dag2,data=bn_discrete_attempts)
 fitted_grain2<-as.grain(fitted_expertBN2)
+fitted_grain2$universe
+
 
 team_points<-sort(unique(bn_discrete_attempts$Tm))
 

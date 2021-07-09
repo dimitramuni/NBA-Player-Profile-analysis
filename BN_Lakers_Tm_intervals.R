@@ -15,7 +15,7 @@ str(lakers_to_discretise_attempts)
 lakers_to_discretise_attempts=as.data.frame(apply(lakers_to_discretise_attempts,MARGIN=2,FUN=as.numeric))
 
 
-lakers_discrete_attempts=discretize(lakers_to_discretise_attempts, breaks = 5)
+lakers_discrete_attempts=discretize(lakers_to_discretise_attempts,method = 'hartemink')
 #bn_discrete_attempts$Tm=as.factor(chicago_9798$Tm.x)
 str(lakers_discrete_attempts)
 
@@ -37,7 +37,7 @@ strength.plot(simple_expert_dag2,
 # Computing accuracy of simple expert BN
 
 ntrain<-203
-ntest<-dim(lakers_3yrs)[1]-ntrain
+ntest<-dim(Lakers_3yrs)[1]-ntrain
 
 
 fitted_expertBN2<-bn.fit(simple_expert_dag2,data=lakers_discrete_attempts[1:ntrain,])
@@ -51,7 +51,7 @@ team_points<-sort(unique(lakers_discrete_attempts$Tm))
 predictions_train<-matrix(NA,ncol=length(team_points),nrow=ntrain)
 colnames(predictions_train)<-team_points
 
-for (i in 1:dim(lakers_discrete_attempts[,1:ntrain])[1]) {
+for (i in 1:dim(lakers_discrete_attempts[1:ntrain,])[1]) {
   
   
   bnn_net<-setEvidence(compile(fitted_grain2),nodes = colnames(lakers_discrete_attempts)[-1],
