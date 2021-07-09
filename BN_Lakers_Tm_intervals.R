@@ -15,7 +15,7 @@ str(lakers_to_discretise_attempts)
 lakers_to_discretise_attempts=as.data.frame(apply(lakers_to_discretise_attempts,MARGIN=2,FUN=as.numeric))
 
 
-lakers_discrete_attempts=discretize(lakers_to_discretise_attempts,method = 'hartemink')
+lakers_discrete_attempts=discretize(lakers_to_discretise_attempts,breaks = 4)
 #bn_discrete_attempts$Tm=as.factor(chicago_9798$Tm.x)
 str(lakers_discrete_attempts)
 
