@@ -1,7 +1,8 @@
 #Data Cleaning Portland Season 1999-00
 library(lubridate)
-
-
+library(ggplot2)
+library(ggpubr)
+setwd("~/Desktop/Sports Analytics/NBA-Player-Profile-analysis")
 portland_9900=read.csv('Portland_gamelog_1999_2000.csv')
 portland_9900$HomeAway<- ifelse(portland_9900$Sep=='@','Away','Home')
 
@@ -12,6 +13,7 @@ team_tags<-c('MIA','NYK','PHI','ORL','BOS','NJN','WAS','IND','CHH','TOR','DET','
 
 team_total_salary=data.frame('Team'=team_tags,'Salary'=NA)
 
+setwd("~/Desktop/Sports Analytics/NBA-Player-Profile-analysis/salary_9900")
 for (ind in 1:length(team_tags)){
   
   df<-read.csv(paste0(team_tags[ind],'_9900_salary.csv'))
@@ -22,7 +24,7 @@ for (ind in 1:length(team_tags)){
 
 
 ### common code for BN
-
+setwd("~/Desktop/Sports Analytics/NBA-Player-Profile-analysis")
 season_gamelog=read.csv('Portland_gamelog_1999_2000.csv')
 
 player_names=c('RWallace','SPippen','SteveS','DamonS','ArvydasS','DetlefS','GregA',
@@ -48,8 +50,6 @@ else {season_gamelog[,player_names[i]]=player_date_MP$Involvment}
 
 }
 head(season_gamelog)
-
-
 
 ####
 library(bnlearn)
@@ -86,6 +86,7 @@ season_gamelog$HomeAway<- ifelse(portland_9900$Sep=='@','Away','Home')
 home_inds=which(season_gamelog$HomeAway=='Home')
 away_inds=which(season_gamelog$HomeAway=='Away')
 
+
 ### Regressing with differently for home and away game
 
 fit_home<-lm(formula = ScorePM~log_diff_salary,season_gamelog[home_inds,])
@@ -102,7 +103,43 @@ plot(x=season_gamelog$log_diff_salary[away_inds],y=season_gamelog$ScorePM[away_i
 points(x=season_gamelog$log_diff_salary[away_inds],y=prd_away,col='blue')
 
 
-### everything together
-plot(x=season_gamelog$log_diff_salary,y=season_gamelog$ScorePM,type='p')
-points(x=season_gamelog$log_diff_salary[home_inds],y=prd_home,col='red')
-points(x=season_gamelog$log_diff_salary[away_inds],y=prd_away,col='blue')
+
+
+
+
+#plotting Portland Trail Blazers' score difference 
+#during season 1999 - 2000 in each game 
+#against logarithm salary difference for 
+#Trail Blazers and opponent in each game
+
+plot(x=season_gamelog$log_diff_salary,
+     y=season_gamelog$ScorePM,type='p',
+     xlab='logarithmic difference in salary',
+     ylab='Score Difference',
+     main='Portland Trail Blazers Season 1999 - 2000')
+points(x=season_gamelog$log_diff_salary[home_inds],
+       y=prd_home,col='red',type='o')
+points(x=season_gamelog$log_diff_salary[away_inds],
+       y=prd_away,col='blue',type='o')
+legend('topright',legend=c('home game','away game'),
+       col=c('red','blue'),lty=2,pch=1)
+
+
+p1<-ggplot(subset(season_gamelog, HomeAway %in% 'Home' ),
+           aes(x=log_diff_salary,y=ScorePM))+geom_point()+
+           geom_line(aes(log_diff_salary,y=prd_home),colour='red',size=1)+ 
+           #geom_smooth(method='lm',colour='red',size=1,se=FALSE) +
+           xlab('logarithmic difference in salary for home games')+
+           ylab('Score Difference')+
+           ggtitle('Portland Trail Blazers Season 1999 - 2000 home games')
+
+p2<-ggplot(subset(season_gamelog, HomeAway %in% 'Away' ),
+           aes(x=log_diff_salary,y=ScorePM))+geom_point()+
+           geom_line(aes(log_diff_salary,y=prd_away),colour='darkblue',size=1)+ 
+           #geom_smooth(method='lm',colour='darkblue',size=1,se=FALSE) +
+           xlab('logarithmic difference in salary for away games')+
+           ylab('Score Difference')+
+           ggtitle('Portland Trail Blazers Season 1999 - 2000 away games')
+ggarrange(p1,p2)
+
+
