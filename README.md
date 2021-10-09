@@ -14,4 +14,4 @@ Portland Trail Blazers undergone an impressive transformation at the end of the 
 
 ## Data 
 
-Data courtesy of **Sports Reference LLC** under creative commons, Basketball-Reference.com - Basketball Statistics and History. https://www.basketball-reference.com/.
+Data courtesy of **Sports Reference LLC** under creative commons licence, Basketball-Reference.com - Basketball Statistics and History. https://www.basketball-reference.com/.
