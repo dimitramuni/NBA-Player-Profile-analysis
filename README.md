@@ -4,7 +4,7 @@ Portland Trail Blazers undergone an impressive transformation at the end of the 
 
 **keywords**:  regularised skill plus minus; skill assessment dimension reduction; mul-tivariate  gradient  boost  classification;  team  wise  skill  assessment  with  K-Meansclustering method; Sport analytics
 
-* This project was part of [Sport Analytics (753A01)](https://www.ida.liu.se/~753A01/index.en.shtml) course at Linköping University during VT2 2021 
+* This project was part of [Sport Analytics (753A01)](https://www.ida.liu.se/~753A01/index.en.shtml) course at Linköping University during VT2 2021. 
 
 
 
