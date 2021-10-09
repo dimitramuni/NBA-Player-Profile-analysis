@@ -11,3 +11,7 @@ Portland  Trail  Blazers  undergone  an  impressive  transformation  at  the  en
 ## Authors: 
 * Julia Lindohf 
 * Dimitra Muni
+
+## Data 
+
+Data courtesy of **Sports Reference LLC** under creative commons, Basketball-Reference.com - Basketball Statistics and History. https://www.basketball-reference.com/.
