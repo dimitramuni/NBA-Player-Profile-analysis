@@ -8,4 +8,6 @@ Portland  Trail  Blazers  undergone  an  impressive  transformation  at  the  en
 
 
 
-
+## Authors: 
+* Julia Lindohf 
+* Dimitra Muni
